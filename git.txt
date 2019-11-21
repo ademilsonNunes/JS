@@ -1,0 +1,48 @@
+comandos básicos git
+git config --global user.name  "ademilsonNunes"
+git config --global user.email "ti@sobelsuprema.com.br"
+
+git clone https://github.com/ademilsonNunes/JS.git
+
+
+Criando uma branch
+git checkout -b nome_da_tarefa
+
+Fazendo o commit
+Sempre que finalizarmos alguma alteração, vamos criar um commit. Imagina que você acabou de criar uma página HTML e adicionou títulos e alguns textos nessa página. Teóricamente temos a primeira versão dela. Então fazemos um commit.
+Para isso, vamos adicionar os arquivos alterados com o comando git add nome_dos_arquivos e para saber quais foram os arquivos alterados.
+
+git add nome_dos_arquivos
+git add . (Novos e/ou modificados)
+git status (mostra os modificados)
+git commit -m "mensagem de commit"
+
+
+Fazendo o merge
+Com o nosso commit feito a nossa nova branch temos uma versão diferente da master. Podemos confirmar que estamos com diferença entre master e nossa branch rodando o seguinte comando (ainda na branch nova):
+
+git diff master
+
+Sabendo que, realmente, nossa branch nova está com diferenças da master, precisaremos fazer um merge para juntar os novos commits, feitos na nova branch, com a master. Para isso precisamos voltar para a master e rodar o comando
+
+git merge.
+
+
+Para voltar para a master, usamos o comando 
+git checkout master 
+
+e para fazer o merge, o comando 
+
+git merge nome_da_branch
+
+
+
+O Git nos mostrará uma saída confirmando o que foi adicionado.
+Enviando para o GitHub
+Com todas as nossas alterações devidamente feitas, podemos, agora, enviar para o GitHub.
+Utilizamos o comando 
+
+git push origin master 
+
+git push
+
